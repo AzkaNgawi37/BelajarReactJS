@@ -1,0 +1,10 @@
+awal inisiasi git
+- Buat Repository di Github
+- Buat folder project di local komputer/laptop
+- Inisiasi git = git init
+- Menambahkan file/project ke folder project 
+- Menambahkan perubahan flie/project ke git =
+- Commit git = git commit -m "pesan commit"
+- tambahkan cabang/branch = git branch -M main
+- hubungkan ke githhub = git remote add origin alamat git
+- upload file/perubahan ke github/repo online = git push -u origin main
