@@ -3,32 +3,31 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+function Greeting() {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className="greeting">
+      <h1>Hallo</h1>
+      <p>Selamat pagi</p>
+    </div>
+  );
+}
+
+function Biodata(props) {
+  return (
+    <div className="biodata">
+      <p>Nama : {props.nama}</p>
+      <p>Kelas : {props.kelas}</p>
+      <p>NISN : {props.nisn}</p>
+    </div>
+  );
+}
+function App() {
+  return (
+    <div className="container">
+      <Greeting/>
+      <Biodata nama="AMBARAM" kelas="XI PULUPULU 4" nisn="9835769"/>
+      <Biodata nama="RUSDITANK" kelas="XI PULUPULU 4" nisn="7695674"/>
+    </div>
   )
 }
 
